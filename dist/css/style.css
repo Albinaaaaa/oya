@@ -700,3 +700,140 @@ h6 {
     padding-left: 40px;
   }
 }
+
+.information {
+  padding: 138px 0 125px 0;
+  background: url("../img/main/decor.svg") center no-repeat, linear-gradient(0deg, #EBEBEB, #EBEBEB);
+  color: #3E4C3D;
+}
+@media (max-width: 991.98px) {
+  .information {
+    padding: 85px 0 80px 0;
+  }
+}
+.information__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+@media (max-width: 1378px) {
+  .information__container {
+    flex-direction: column;
+    row-gap: 50px;
+    align-items: center;
+  }
+}
+.information__column {
+  flex: 1 0 33%;
+}
+.information__column_1 {
+  max-width: 500px;
+}
+.information__column_2 {
+  display: flex;
+}
+.information__main-heading {
+  font-size: 7rem;
+  text-align: center;
+}
+.information__main-heading:not(:last-child) {
+  margin-bottom: 50px;
+}
+@media (max-width: 767.98px) {
+  .information__main-heading {
+    font-size: 5rem;
+  }
+}
+.information__untitled-sans {
+  font-size: 5rem;
+  line-height: 1.2;
+}
+@media (max-width: 767.98px) {
+  .information__untitled-sans {
+    font-size: 3.5rem;
+  }
+}
+.information__heading {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 2.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.information__wrapper_1 {
+  align-self: flex-end;
+  padding-top: 580px;
+  transform: translateX(-110px);
+}
+@media (max-width: 1378px) {
+  .information__wrapper_1 {
+    padding-top: 350px;
+  }
+}
+@media (max-width: 991.98px) {
+  .information__wrapper_1 {
+    display: none;
+  }
+}
+.information__wrapper_2 {
+  display: flex;
+  flex-direction: column;
+  gap: 255px;
+}
+@media (max-width: 1378px) {
+  .information__wrapper_2 {
+    gap: 100px;
+  }
+}
+@media (max-width: 991.98px) {
+  .information__wrapper_2 {
+    gap: 50px;
+  }
+}
+.information__wrapper_3 {
+  align-self: flex-end;
+  transform: translateX(110px);
+}
+@media (max-width: 991.98px) {
+  .information__wrapper_3 {
+    display: none;
+  }
+}
+.information__image {
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.information__image img {
+  max-width: 100%;
+}
+.information__image_big {
+  max-width: 360px;
+  margin: 0 auto;
+}
+@media (max-width: 1378px) {
+  .information__image_big {
+    display: none;
+  }
+}
+.information__image_medium {
+  max-width: 240px;
+  margin: 0 auto;
+}
+.information__image_small {
+  max-width: 150px;
+}
+.information__decor {
+  display: inline-block;
+  width: 45px;
+  height: 34px;
+  background: url("../img/informtion/decor.svg") center no-repeat;
+}
+.information__text {
+  max-width: 200px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  text-align: center;
+}
