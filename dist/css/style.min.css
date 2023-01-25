@@ -288,15 +288,26 @@ h6 {
 :root {
   --column-count: 2.2;
   --column-gap: 60;
+  --column--count-two: 2.55;
+  --column-gap-two: 300;
+}
+@media (max-width: 1500px) {
+  :root {
+    --column-gap-two: 150;
+  }
 }
 @media (max-width: 991.98px) {
   :root {
     --column-count: 1.2;
+    --column-gap-two: 80;
+    --column--count-two: 2.2;
   }
 }
 @media (max-width: 650px) {
   :root {
-    --column-gap: 10px;
+    --column-gap: 10;
+    --column-gap-two: 10;
+    --column--count-two: 1.5;
   }
 }
 
@@ -445,6 +456,92 @@ h6 {
 
 .swiper-slide {
   max-width: 780px;
+}
+
+.gallery__swiper .swiper-slide-prev {
+  opacity: 0.4;
+  transform: scale(0.8);
+}
+.gallery__swiper .swiper-slide-prev .figcaption {
+  visibility: hidden;
+}
+.gallery__swiper .swiper-slide-next {
+  opacity: 0.4;
+  transform: scale(0.8);
+}
+.gallery__swiper .swiper-slide-next .figcaption {
+  visibility: hidden;
+}
+
+.gallery__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.gallery__image {
+  border-radius: 50%;
+  max-width: 640px;
+  overflow: hidden;
+}
+.gallery__image img {
+  max-width: 100%;
+  transform: scale(1.05);
+}
+
+.figcaption {
+  margin-left: 50px;
+}
+@media (max-width: 767.98px) {
+  .figcaption {
+    margin: 0 auto;
+  }
+}
+
+.figcaption__title {
+  font-weight: 300;
+  font-size: 7rem;
+  color: #D7AE9C;
+}
+.figcaption__title:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media (max-width: 991.98px) {
+  .figcaption__title {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .figcaption__title {
+    font-size: 5rem;
+    text-align: center;
+  }
+}
+@media (max-width: 650px) {
+  .figcaption__title {
+    font-size: 4.5rem;
+  }
+}
+
+.figcaption__text {
+  font-size: 2.4rem;
+}
+@media (max-width: 767.98px) {
+  .figcaption__text {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+}
+@media (max-width: 650px) {
+  .figcaption__text {
+    font-size: 1.9rem;
+  }
+}
+
+.gallery__swiper-button-prev:hover,
+.gallery__swiper-button-next:hover {
+  cursor: pointer;
 }
 
 .header {
@@ -1218,5 +1315,53 @@ h6 {
 @media (max-width: 767.98px) {
   .cards__text {
     font-size: 1.7rem;
+  }
+}
+
+.gallery {
+  padding: 120px 0;
+  background: #3E4C3D;
+}
+.gallery__wrapper {
+  max-width: 450px;
+  position: absolute;
+  z-index: 5;
+}
+@media (max-width: 767.98px) {
+  .gallery__wrapper {
+    position: static;
+  }
+}
+.gallery__title {
+  font-size: 14rem;
+}
+@media (max-width: 991.98px) {
+  .gallery__title {
+    font-size: 10rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .gallery__title {
+    max-width: 300px;
+    font-size: 8rem;
+  }
+}
+@media (max-width: 650px) {
+  .gallery__title {
+    font-size: 6.4rem;
+  }
+}
+.gallery__slider {
+  position: relative;
+  z-index: 1;
+}
+.gallery__buttons-container {
+  padding-left: 150px;
+  display: flex;
+  gap: 80px;
+}
+@media (max-width: 767.98px) {
+  .gallery__buttons-container {
+    display: none;
   }
 }
